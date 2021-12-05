@@ -46,7 +46,7 @@ class Student extends User {
   }
 }
 
-/* Task 3*/
+/* Task 3 */
 
 class Worker {
   #name;
@@ -66,3 +66,17 @@ class Worker {
     this.getSalary = this.getRate * this.getDays + "$";
   }
 }
+
+/* Task 4 */
+
+class Base {
+  constructor() {
+    Base.prototype.params = {
+      page: 1,
+    };
+  }
+}
+
+class Filter extends Base {}
+
+class Sort extends Base {}
