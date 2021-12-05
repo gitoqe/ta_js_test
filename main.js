@@ -45,3 +45,24 @@ class Student extends User {
     this.getCourse = new Date().getFullYear() - this.year;
   }
 }
+
+/* Task 3*/
+
+class Worker {
+  #name;
+  #surname;
+  #rate;
+  #days;
+  constructor(name, surname, rate, days) {
+    this.#name = name;
+    this.#surname = surname;
+    this.#rate = rate;
+    this.#days = days;
+
+    this.getName = this.#name;
+    this.getSurname = this.#surname;
+    this.getRate = this.#rate;
+    this.getDays = this.#days;
+    this.getSalary = this.getRate * this.getDays + "$";
+  }
+}
